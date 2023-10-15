@@ -1,0 +1,452 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+/* <number> valores */
+flex-grow: 3;
+flex-grow: 0.6;
+
+/* Valores globales */
+flex-grow: inherit;
+flex-grow: initial;
+flex-grow: unset;
+
+border: 0px solid;
+font-family: Inter;
+letter-spacing: 1px;
+/*box-sizing: content-box; */ /* Predeterminado está content-box, 
+que es basicamente sumar el padding y el border al objeto, la otra opción es border-box */
+
+}
+
+body {
+    background-color:rgb(16, 16, 16);
+    width: 100%;
+    height:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main {
+width: 40%;
+height: auto;
+color: #FAFAFA;
+background-color: rgba(100, 215, 227, 0);
+border-radius: 12px;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+flex-direction: column;
+
+
+}
+
+.contenedorinferior {
+width: 100%;
+height: auto;
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: #fafafa;
+overflow: hidden;
+flex-flow: 0;
+
+}
+
+.contenedorsuperior {
+    width: 100%;
+    
+}
+
+.reproductor {
+width: 80%;
+
+}
+
+
+article {
+    width: 100%;
+    height: 4vh;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    flex-wrap: wrap;
+    flex-grow:1;
+    
+
+
+}
+
+
+
+.imagencomplementaria {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    
+
+}
+
+.imagencomplementaria img {
+    width: 100%;
+    position: relative;
+}
+
+.mascara {
+    clip-path: inset(0% 1% 0% 1%);
+
+}
+.radiotexto {
+    display: flex;
+    padding: auto;
+    display: flex;
+    width: full-width;
+    height: 10vh;
+    font-size: 6vh;
+    border: 0px solid;
+    margin-top: 2.5%;
+    white-space: nowrap;
+    background: radial-gradient(circle, transparent 70%, rgb(16, 16, 16) 90%); /* Cambia los colores según tus preferencias */;
+    text-align: center;
+    font-size: 24px;
+    overflow: hidden;
+    
+
+
+}
+
+@keyframes moverTexto {
+    0% {
+      transform: translateX(200%);
+  }
+  100% {
+      transform: translateX(-200%);
+  }
+}
+
+.textoCambianteAnimado {
+    display: flex;
+    animation: moverTexto 10s linear infinite;
+    letter-spacing: 4pt;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    position: absolute;
+    width: full-width;
+    z-index: -1;
+    background-image: linear-gradient(121deg, rgba(250,250,250,0.8) 0%, rgba(250,250,250,0.2) 60%); /* Define el gradiente de color */
+    -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+    color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+    
+}
+ 
+ 
+     #programaActual {
+        display: flex;
+        letter-spacing: 4pt;
+        white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+        width: full-width;
+        z-index: -1;
+        background-image: linear-gradient(121deg, rgba(250,250,250,0.8) 0%, rgba(250,250,250,0.2) 60%); /* Define el gradiente de color */
+        -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+        color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+        
+    }
+     
+    
+
+    
+
+
+.barradenavegacion {
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    height: 20px;
+    gap: auto;
+    white-space: nowrap;
+    border: 0px solid #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:6%;
+    
+    
+}
+
+#boxdenavegador {
+display: flex;
+flex-direction: row;
+justify-content: left;
+align-items: center;
+position: relative;
+width: 100%;
+height: auto;
+margin: 0 20px 0 20px;
+padding: 0;
+height: 8vh;
+border-radius: 100px;
+background: rgb(250,250,250);
+background: linear-gradient(135deg, rgba(250,250,250,0.4) 0%, rgba(250,250,250,0.1) 80%);
+overflow: hidden;
+
+
+}
+
+#navegadormomento {
+    position:absolute;
+    width:22%;
+    height: 65px;
+    border-radius: 100px;
+    background: rgb(250,250,250);
+    background: linear-gradient(135deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0.2) 60%);
+    overflow: hidden;
+}
+
+#navegadormomentodirecto {
+    position:absolute;
+    width: 100%;
+    height: 65px;
+    border-radius: 100px;
+    background: rgb(250,250,250);
+    background: linear-gradient(135deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0.2) 60%);
+    overflow: hidden;
+    margin: 0;
+
+} 
+
+#duracion {
+    position: relative;
+    width: 90%;
+    margin: 40px 20px 40px 80px;
+    height: auto;
+    font-size: 24px;
+    background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 30%); 
+    -webkit-background-clip: text;
+    color: transparent; 
+
+}
+
+#directo {
+    position: relative;
+    margin-left: 38%;
+    margin-right:34%;
+    width: full-width;
+    height: auto;
+    font-size: 24px;
+    background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 99%); 
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 4pt;
+    font-weight:800;
+
+}
+
+#botondirecto {
+margin-left:20%;
+margin-right:-30%;
+
+}
+
+
+/* 
+#seek-bar{
+    width:200%;
+    margin: 0;
+}
+   */
+  /* Oculta la barra de búsqueda predeterminada en WebKit */
+  /* #seek-bar::-webkit-slider-runnable-track {
+    background-color: rgba(0, 0, 255, 0);
+    color: transparent;
+    border: none;
+    width: full-width;
+  } */
+  /* #seek-bar::-webkit-scrollbar {
+    background-color: rgb(0, 0, 255);
+    color: transparent;
+    border: none;
+    width: full-width;
+  } */
+
+  /* #seek-bar::-webkit-progress-value {
+    background-color: #000000;
+    width: full-width;
+  } */
+
+  /* #seek-bar::-webkit-slider-runnable-track {
+    background-color: #191919;
+    border: 1px solid #FAFAFA;
+    border-radius: 20px;
+    width: full-width;
+  } */
+/* 
+  #seek-bar::-webkit-slider-runnable-track:hover {
+    background-color: #d8d8d8;
+    width: full-width;
+  } */
+
+
+
+.controles {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    height: 10vh;
+    overflow: hidden;
+    background-color:rgba(255, 255, 255, 0);
+    border: 0px solid #FAFAFA;
+    margin-top:40px;
+    margin-bottom:40px;
+    white-space: nowrap;
+    
+}
+
+
+
+.icono {
+    padding:0;
+    height: 70%;
+    padding-left:4%;
+    padding-right:4%;
+}
+
+#imagen-reproducir-pausar {
+    display:flex;
+    height:100%;
+    color: red;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+
+}
+
+#imagen-treint-atras {
+    display:flex;
+    height:100%;
+    color: red;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+
+
+}
+
+#imagen-treint-adelante {
+    display:flex;
+    height:100%;
+    color: red;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+
+
+}
+
+
+button {
+    background-color: #fafafa00;
+}
+
+#fotoplay{
+    height: 70%;
+    padding-left:4%;
+    padding-right:4%;
+}
+
+#treintatras {
+    display:flex;
+    height: 70%;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 4% 0% 4%;
+}
+
+#treintadelante {
+    display:flex;
+    height: 70%;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 4% 0% 4%;
+}
+
+#fotocomplementarias {
+    height:50%;
+}
+
+.programas {
+    align-items: center;
+    flex-direction: row;
+    gap: 10vw;
+    width: 100%;
+    height:auto;
+    border: 0px solid #FAFAFA;
+    background-color: #fafafa00;
+    background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 90%); /* Define el gradiente de color */
+    -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+    color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+    border-radius: 200px;
+    letter-spacing: 4pt;
+    margin-top:-26px;
+    margin-left:-3vw;
+
+}
+
+p {
+    letter-spacing: inherit;
+}
+
+
+
+/* TEXTO REPRODUCTOR TABLA */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+#tablaProgramacion {
+display: none;
+
+
+
+}
+
+a {
+
+    align-items: center;
+    flex-direction: row;
+    gap: 10vw;
+    width: 100%;
+    height:auto;
+    border: 0px solid #FAFAFA;
+    background-color: #fafafa00;
+    background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 90%); /* Define el gradiente de color */
+    -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+    color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+    border-radius: 200px;
+    letter-spacing: 4pt;
+    margin-top:-26px;
+    margin-left:-3vw;
+
+}

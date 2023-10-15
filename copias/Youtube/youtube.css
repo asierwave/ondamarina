@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Noto+Sans:wght@300;400&display=swap');
+
+* {
+    display: flex;
+    border:0px solid;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    width: full-width;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: full-width;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: full-width;
+    margin-bottom: 4%;
+    }
+
+#navizquierda {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    width: 30%;
+    margin:0;
+
+}
+
+article {
+display: flex;
+justify-content: center;
+
+}
+
+
+#navbuscador {
+    display: flex;
+    width: 80vw;
+    justify-content:left;
+    align-items: center;
+    background-color: rgba(233, 233, 233, 0);
+    border: 1px solid rgb(233, 233, 233);
+    border-radius: 40px;
+    padding-left: 1.5%;
+    
+    
+}
+
+#introducetexto {
+    color: rgb(187, 187, 187);
+
+}
+
+#navderecha {
+    display: flex;
+    width: auto;
+    margin: 0;
+    align-items: center;
+    justify-content: right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+}
+
+#selectortemas {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding:0;
+    margin:0;
+}
+
+#temas {
+    flex-wrap: wrap;
+    gap: 0.5%;
+    white-space: nowrap;
+    width: 100%;
+    height: auto;
+    margin:0;
+
+}
+
+#galeria {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 2%;
+    margin:0;
+}
+
+
+.videocaja {
+    margin-top:3%;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+#iconotitulovideocaja {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+h1 {
+width: full-width;
+margin: 0;
+}
+
+#cuerpovideocaja {
+    margin-top: 2%;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left:10.5%;
+
+}
+
+
+
+button{
+background-color: rgba(233, 233, 233, 0);
+
+}
+
+.barratemas {
+    display: flex;
+    padding:0.5%;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 0px solid;
+    height: auto;
+    width: auto;
+
+
+}
+
+.barratemas a {
+    display: flex;
+    padding:0.5%;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 0px solid;
+    height: auto;
+    width: auto;
+    margin:0;
+
+}
+
+a {
+    width:100%;
+    height: auto;
+
+  
+  }
+
+.barratemas a:hover {
+    background-color: black;
+    color: #FAFAFA;
+    white-space: nowrap;
+    display: flex;
+    white-space: nowrap;
+    border-radius: 8px;
+    border: 0px solid;
+    height: 100%;
+    width: 100%;
+}
+
+#titulovideocaja {
+    margin-top: 3%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1%;
+}
+
+p {
+    height: auto;
+    margin: 0;
+
+}
+
+.logo {
+    width: auto;
+    margin:0;
+}
+
+#logoimagen{
+    width: 100%;
+}
+
+#desplegableimagen {
+    width: 100%;
+
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lanf="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Onda Marina | Tu radio online</title>
+        <link rel="stylesheet" href="Assets/main.css">
+        <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+        <!-- Favicon predeterminado -->
+        <link rel="icon" href="Assets/favicon.png" sizes="32x32" type="image/png">
+        <!-- Favicon alternativo para fondos claros -->
+        <link rel="alternate icon" href="/Assets/favicon-32x32.png" sizes="32x32" type="image/png">
+
+    </meta>
+    </head>
+    <body>
+
+      <header>
+        <a class="logo" href="#"><img src="Assets/logo.png" alt="Logotipo de OndaMarina">
+        </a>
+        <nav>
+          <button>
+            <a href="#"><p class="textobotonprincipal">PROGRAMAS</p></a>
+            <a href="#"><p class="textobotonprincipal">CONTACTO</p></a>
+          </button>
+          <div id="radio">
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+              $(document).ready(function() {
+                $.ajax({
+                  url: "Reproductor_mod/reproductor.html",
+                  dataType: "html",
+                  success: function(data) {
+                    $("#radio").html(data);
+                  }
+                });
+              });
+            </script>
+
+            </div> 
+
+             <!-- <img src="Assets/botonrecord.png" alt="Logotipo de OndaMarina"></div> -->
+            </div>
+        </nav>
+
+  
+      </header>
+
+
+<!--
+<h1> Formulario 2</h1>
+<form role="search">
+  <input type="search" name="search" aria-label="Search">
+  <button type="submit"> Buscar</button>
+</form>
+
+<h2> Checkbox </h2>
+<form>
+  <fieldset>
+    <legend> Aceptar políticas de privaciad</legend>
+    <input type="checkbox" id="ok" name="ok">
+    <label for="ok"> He leído...</label>
+    <input type="checkbox" id="no" name="ok">
+    <label for="no"> Creo que se ha roto </label>
+
+  </fieldset>
+</form>
+
+
+<h1>Formulario</h1>
+  <form action="">
+    <label for="usuario"> Usuario </label>
+
+ 
+
+
+    Para luego retocarlo en css el id
+    <input type="text" id="usuario"  name="usuario">
+  </form>
+-->
+        <section class="noticias">
+            <div class="contenedor">
+            
+              <div class="contenido">
+                  <h1 class="titular">ESTRENO DE LA TABERNA DE LOS SUEÑOS</h1>
+                  <h2 class="subtitulo">27 de noviembre de 2023</h2>
+                  <p class="cuerpo">
+                    Un programa de radio es una presentación de contenido programada que se realiza mediante una transmisión radial. En el marco de una emisora de radio, los programas radiales son los segmentos que componen la programación total de la emisora, la cual emite su señal en determinada frecuencia.
+                  </p>
+              </div>
+              <div class="imagen">
+                <img src="Assets/imagenarticulo1.png" alt="Imagen del artículo">
+            </div>
+          </div>
+
+          <div class="contenedor">
+            
+            <div class="contenido">
+                <h1 class="titular">ESTRENO DE LA SENDA DEL VAGABUNDO</h1>
+                <h2 class="subtitulo">26 de noviembre de 2023</h2>
+                <p class="cuerpo">
+                  Un programa de radio es una presentación de contenido programada que se realiza mediante una transmisión radial. En el marco de una emisora de radio, los programas radiales son los segmentos que componen la programación total de la emisora, la cual emite su señal en determinada frecuencia.
+                </p>
+            </div>
+            <div class="imagen">
+              <img src="Assets/fotoarticulo2.png" alt="Imagen del artículo">
+            </div>
+           </div>
+        </section>
+
+
+        
+    </body>
+
+    <footer>
+          <p class="footertexto">ONDA MARINA. 2023. TODOS LOS DERECHOS RESERVADOS.</p>
+          <button class="botonesfooter">
+            <a href="#Legal">LEGAL</a>
+            <a href="#Sponsors">SPONSORS</a>
+      </button>
+  </footer>
+
+
+</html>

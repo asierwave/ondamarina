@@ -1,0 +1,436 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+/* <number> valores */
+flex-grow: 3;
+flex-grow: 0.6;
+
+/* Valores globales */
+flex-grow: inherit;
+flex-grow: initial;
+flex-grow: unset;
+
+border: 0px solid;
+font-family: Inter;
+letter-spacing: 1px;
+/*box-sizing: content-box; */ /* Predeterminado está content-box, 
+que es basicamente sumar el padding y el border al objeto, la otra opción es border-box */
+
+}
+
+body {
+    background-color: #2F75A2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:auto;
+    display: flex;
+    
+}
+
+article {
+    width: auto;
+    border-radius: 40px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    flex-wrap: wrap;
+    flex-grow:1;
+    
+
+
+}
+
+main {
+display: flex;
+flex-direction: row;
+width: full-width;
+height: auto;
+color: #FAFAFA;
+background-color: rgba(100, 215, 227, 0);
+border-radius: 12px;
+display: flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+flex-direction: column;
+}
+
+    .reproductor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: inherit;
+    display: flex;
+    white-space: normal;
+    justify-content: left;
+
+    }
+
+            .mascara {
+                display: flex;
+                clip-path: inset(0% 1% 0% 1%);
+                width: 30vw;
+                flex-wrap:wrap;
+                flex-direction: row;
+            
+            }
+            .radiotexto {
+                flex-wrap: wrap;
+                display: flex;
+                padding: auto;
+                display: flex;
+                width: auto;
+                height: 10vh;
+                font-size: 6vh;
+                border: 0px solid;
+                margin: 0;
+                white-space: nowrap;
+                background: radial-gradient(circle, transparent 70%, #2F75A2 90%); /* Cambia los colores según tus preferencias */;
+                text-align: center;
+                font-size: 24px;
+                overflow: hidden;
+                
+            
+            
+            }
+        
+            @keyframes moverTexto {
+                0% {
+                transform: translateX(200%);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
+            }
+        
+            .textoCambianteAnimado {
+                display: flex;
+                animation: moverTexto 10s linear infinite;
+                letter-spacing: 4pt;
+                white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+                position: absolute;
+                width: full-width;
+                z-index: -1;
+                background-image: linear-gradient(121deg, rgba(250,250,250,0.8) 0%, rgba(250, 250, 250, 0.2) 60%); /* Define el gradiente de color */
+                -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+                color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+                
+            }
+        
+        
+            #programaActual {
+                display: flex;
+                letter-spacing: 4pt;
+                white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+                width: full-width;
+                z-index: -1;
+                background-image: linear-gradient(121deg, rgba(250,250,250,0.8) 0%, rgba(250,250,250,0.2) 60%); /* Define el gradiente de color */
+                -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+                color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+                
+            }
+            
+            /* TEXTO REPRODUCTOR TABLA */
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            
+            th {
+                background-color: #f2f2f2;
+            }
+            
+            
+            #tablaProgramacion {
+            display: none;
+            
+            }
+
+
+
+        .contenedorinferior {
+            width: 60%;
+            flex-grow:1;
+            height: 6vh;
+            display:flex;
+            align-items:center;
+            justify-content: left;
+            flex-direction: row;
+            color: #fafafa;
+            overflow: hidden;
+            flex-wrap: wrap;
+            
+            }
+
+            .barradenavegacion {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+                gap: auto;
+                white-space: nowrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom:6%;
+                
+                
+            }
+
+            #boxdenavegador {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                width: 300px;
+                height: inherit;
+                padding: 0;
+                margin: 0;
+                height: 6vh;
+                border-radius: 100px;
+                background: rgb(250,250,250);
+                background: linear-gradient(135deg, rgba(250,250,250,0.4) 0%, rgba(250,250,250,0.1) 80%);
+                overflow: hidden;
+                
+                
+                }
+                
+                #navegadormomento {
+                    position:absolute;
+                    width:22%;
+                    height: 65px;
+                    border-radius: 100px;
+                    background: rgb(250,250,250);
+                    background: linear-gradient(135deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0.2) 60%);
+                    overflow: hidden;
+                }
+                
+                #duracion {
+                    position: relative;
+                    width: 90%;
+                    margin: 40px 20px 40px 80px;
+                    height: auto;
+                    font-size: 24px;
+                    background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 30%); 
+                    -webkit-background-clip: text;
+                    color: transparent; 
+                
+                }
+                
+                #navegadormomentodirecto {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    width: 40vw;
+                    height: inherit;
+                    border-radius: 100px;
+                    background: rgb(250,250,250);
+                    background: linear-gradient(135deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0.2) 60%);
+                    overflow: hidden;
+                
+                } 
+                
+                    #directo {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1em;
+                        position: absolute;
+                        width: full-width;
+                        height: 3vh;
+                        padding: 0 40px 0 40px;
+                        font-size: 24px;
+                        background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 99%); 
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        letter-spacing: 4pt;
+                        font-weight:800;
+                    
+                    }
+                    
+                        #botondirecto {
+                        margin-bottom:6px;
+                        }
+
+
+
+
+
+    .controles {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1vw;
+        margin-left:2vw;
+        flex-direction: row;
+        width: 32%;
+        height: 60%;
+        background-color:rgba(255, 255, 255, 0);
+        border: 0px solid #FAFAFA;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        
+    }
+
+    .icono {
+       align-items: center;
+    }
+
+        #treintatras {
+            display:flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 0% 0% 0% 0%;
+        }
+
+            #imagen-treint-atras {
+                display:flex;
+                height:100%;
+                color: red;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+                cursor:pointer;
+
+
+            }
+
+
+
+        button {
+            background-color: #fafafa00;
+        }
+
+        #fotoplay{
+            height: 100%;
+        }
+
+            #imagen-reproducir-pausar {
+                display:flex;
+                height:100%;
+                color: red;
+                justify-content: center;
+                align-items: center;
+                cursor:pointer;
+
+            }
+
+
+
+        #treintadelante {
+            display:flex;
+            height: 100%;
+            flex-grow: 0;
+            justify-content: center;
+            align-items: center;
+            padding: 0% 0% 0% 0%;
+        }
+
+            #imagen-treint-adelante {
+                display:flex;
+                height:100%;
+                color: red;
+                justify-content: center;
+                align-items: center;
+                cursor:pointer;
+
+
+            }
+
+    .programas {
+        align-items: center;
+        flex-direction: row;
+        gap: 10vw;
+        width: 100%;
+        height:auto;
+        border: 0px solid #FAFAFA;
+        background-color: #fafafa00;
+        background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 90%); /* Define el gradiente de color */
+        -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+        color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+        border-radius: 200px;
+        letter-spacing: 4pt;
+        margin-top:-26px;
+        margin-left:-3vw;
+
+    }
+
+    p {
+        letter-spacing: inherit;
+    }
+
+
+    a {
+
+        align-items: center;
+        flex-direction: row;
+        gap: 10vw;
+        width: 100%;
+        height:auto;
+        border: 0px solid #FAFAFA;
+        background-color: #fafafa00;
+        background-image: linear-gradient(121deg, rgba(250,250,250,1) 0%, rgba(250,250,250,0) 90%); /* Define el gradiente de color */
+        -webkit-background-clip: text; /* Aplica el gradiente de color al texto en navegadores webkit (Safari y Chrome) */
+        color: transparent; /* Hace que el texto sea transparente para que se muestre el gradiente de color de fondo */
+        border-radius: 200px;
+        letter-spacing: 4pt;
+        margin-top:-26px;
+        margin-left:-3vw;
+
+    }
+
+
+
+
+    /* 
+    #seek-bar{
+        width:200%;
+        margin: 0;
+    }
+    */
+    /* Oculta la barra de búsqueda predeterminada en WebKit */
+    /* #seek-bar::-webkit-slider-runnable-track {
+        background-color: rgba(0, 0, 255, 0);
+        color: transparent;
+        border: none;
+        width: full-width;
+    } */
+    /* #seek-bar::-webkit-scrollbar {
+        background-color: rgb(0, 0, 255);
+        color: transparent;
+        border: none;
+        width: full-width;
+    } */
+
+    /* #seek-bar::-webkit-progress-value {
+        background-color: #000000;
+        width: full-width;
+    } */
+
+    /* #seek-bar::-webkit-slider-runnable-track {
+        background-color: #191919;
+        border: 1px solid #FAFAFA;
+        border-radius: 20px;
+        width: full-width;
+    } */
+    /* 
+    #seek-bar::-webkit-slider-runnable-track:hover {
+        background-color: #d8d8d8;
+        width: full-width;
+    } */
+
